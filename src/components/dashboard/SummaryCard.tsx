@@ -17,13 +17,13 @@ const colorMap = {
 
 const SummaryCard = ({ title, amount, icon: Icon, trend, color }: Props) => {
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-2xl p-5 border border-gray-100 dark:border-gray-800 hover:shadow-md transition-shadow duration-200">
+    <div className="bg-white dark:bg-gray-900 rounded-2xl p-5 border border-gray-100 dark:border-gray-800 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 cursor-default">
       <div className="flex items-start justify-between mb-4">
         <div className={`p-2.5 rounded-xl ${colorMap[color]}`}>
           <Icon size={20} />
         </div>
         {trend && (
-          <span className="text-xs font-medium text-green-500 bg-green-50 dark:bg-green-950 px-2 py-1 rounded-full">
+          <span className="text-xs font-medium text-gray-400 bg-gray-50 dark:bg-gray-800 px-2 py-1 rounded-full">
             {trend}
           </span>
         )}

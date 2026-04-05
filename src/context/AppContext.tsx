@@ -15,7 +15,9 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   });
 
   const [darkMode, setDarkMode] = useState<boolean>(() => {
-    return localStorage.getItem("finly_dark") === "true";
+    const stored = localStorage.getItem("finly_dark") === "true";
+    document.documentElement.classList.toggle("dark", stored);
+    return stored;
   });
 
   useEffect(() => {
