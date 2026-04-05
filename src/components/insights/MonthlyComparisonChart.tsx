@@ -10,6 +10,7 @@ import {
 } from "recharts";
 import { useApp } from "../../context/AppContext";
 import { getMonthlySummaries, formatCurrency } from "../../utils/calculation";
+import type { ValueType } from "recharts/types/component/DefaultTooltipContent";
 
 const MonthlyComparisonChart = () => {
   const { transactions } = useApp();
