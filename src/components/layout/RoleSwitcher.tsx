@@ -19,7 +19,7 @@ const RoleSwitcher = () => {
             }
           `}
         >
-          {r === "admin" ? "👑 Admin" : "👀 Viewer"}
+          {r === "admin" ? " Admin" : " Viewer"}
         </button>
       ))}
     </div>

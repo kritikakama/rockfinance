@@ -26,7 +26,7 @@ const Header = ({ onMenuClick }: { onMenuClick: () => void }) => {
             {greeting()},
           </p>
           <p className="text-base font-semibold leading-tight">
-            {role === "admin" ? "👑 Admin View" : "👀 Viewer Mode"}
+            {role === "admin" ? " Admin View" : "Viewer Mode"}
           </p>
         </div>
       </div>

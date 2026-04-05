@@ -30,7 +30,7 @@ const Sidebar = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
       >
         <div className="flex items-center justify-between px-6 py-5 border-b border-gray-200 dark:border-gray-800">
           <span className="text-xl font-bold text-brand-600 tracking-tight">
-            💰 Finly
+            RockFinance
           </span>
           <button
             onClick={onClose}
@@ -61,7 +61,7 @@ const Sidebar = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
           ))}
         </nav>
         <div className="px-6 py-4 text-xs text-gray-400 dark:text-gray-600">
-          Finly v1.0 · Personal Finance
+          RockFinance v1.0 · Personal Finance
         </div>
       </aside>
     </>
