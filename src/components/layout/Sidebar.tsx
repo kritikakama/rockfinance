@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { LayoutDashboard, ArrowLeftRight, Lightbulb, X } from "lucide-react";
-import { useApp } from "../../context/AppContext";
+//import { useApp } from "../../context/AppContext";
 
 const links = [
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -9,7 +9,7 @@ const links = [
 ];
 
 const Sidebar = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
-  const { darkMode } = useApp();
+  // const { darkMode } = useApp();
 
   return (
     <>
